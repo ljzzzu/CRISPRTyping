@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vboxBlast" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crispr.blast">
+   <children>
+      <ScrollPane prefHeight="407.0" prefWidth="600.0">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="599.0">
+            <children>
+                  <TextField fx:id="fileSeqIn" layoutX="306.0" layoutY="40.0" prefHeight="26.0" prefWidth="218.0" />
+                  <Button fx:id="btnSeqIn" layoutX="69.0" layoutY="40.0" mnemonicParsing="false" onAction="#btnInClicked" prefHeight="26.0" prefWidth="125.0" text="Sequence File" />
+                  <Button fx:id="btnSaveOut" layoutX="69.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnOutClicked" prefHeight="26.0" prefWidth="123.0" text="Save Result" />
+                  <TextField fx:id="fileSaveOut" layoutX="306.0" layoutY="85.0" prefHeight="26.0" prefWidth="218.0" />
+                  <Label fx:id="lblWS" layoutX="69.0" layoutY="130.0" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: lightgray;" text="Min Repeat Length: 23" />
+                  <ScrollBar fx:id="slideWordSize" blockIncrement="1.0" layoutX="306.0" layoutY="135.0" max="20.0" min="2.0" value="4.0" visibleAmount="2.0" />
+                  <Label fx:id="lblGO" layoutX="69.0" layoutY="174.0" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: lightgray;" text="Max Repeat Length: 55" />
+                  <ScrollBar fx:id="slideGapOpen" blockIncrement="1.0" layoutX="306.0" layoutY="179.0" max="10.0" min="1.0" value="1.0" visibleAmount="2.0" />
+                  <Label fx:id="lblGE" layoutX="69.0" layoutY="216.0" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: lightgray;" text="Allow Repeat Mismatch" />
+                  <Label fx:id="lblMM" layoutX="69.0" layoutY="255.0" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: lightgray;" text="Min spacer / repeat: 0.6" />
+                  <ScrollBar fx:id="slideMisMatch" blockIncrement="1.0" layoutX="306.0" layoutY="260.0" max="10.0" min="1.0" value="2.0" visibleAmount="2.0" />
+                  <Label fx:id="lblM" layoutX="69.0" layoutY="295.0" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: lightgray;" text="Max spacer / repeat: 2.5" />
+                  <ScrollBar fx:id="slideMatch" blockIncrement="1.0" layoutX="306.0" layoutY="300.0" max="10.0" min="1.0" value="1.0" visibleAmount="2.0" />
+                  <Button fx:id="btnRun" layoutX="507.0" layoutY="334.0" mnemonicParsing="false" onAction="#runBlast" text="Run Blast" />
+                  <Button fx:id="btnCancel" layoutX="69.0" layoutY="335.0" mnemonicParsing="false" onAction="#cancelBlast" text="Cancel" />
+                  <CheckBox layoutX="309.0" layoutY="220.0" mnemonicParsing="false" selected="true" />		  
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

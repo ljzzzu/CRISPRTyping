@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Main-Class: crispr.crispr
+Specification-Title: CrisprExplorer
+Specification-Version: 0.1.0-SNAPSHOT
+Specification-Vendor: com.ezkit
+Implementation-Title: CrisprExplorer
+Implementation-Version: 0.1.0-SNAPSHOT
+Implementation-Vendor: com.ezkit
+Implementation-Vendor-Id: com.ezkit
+
